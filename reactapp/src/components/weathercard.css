@@ -1,0 +1,82 @@
+.glass-card {
+  background: rgba(10, 30, 40, 0.5);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.2);
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.sub {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  box-shadow: 0 0 8px rgba(0, 255, 255, 0.2);
+  transition: transform 0.2s ease;
+}
+
+.sub:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 12px rgba(237, 245, 245, 0.521);
+}
+
+.aqi-box {
+  border-radius: 12px;
+  font-weight: 600;
+  color: white;
+}
+
+.pollutant-card.safe {
+  border: 2px solid #009966;
+  background: rgba(0, 153, 102, 0.1);
+  color: #009966;
+}
+
+.pollutant-card.moderate {
+  border: 2px solid #ffde33;
+  background: rgba(255, 222, 51, 0.1);
+  color: #ffde33;
+}
+
+.pollutant-card.unhealthy {
+  border: 2px solid #ff9933;
+  background: rgba(255, 153, 51, 0.1);
+  color: #ff9933;
+}
+
+.pollutant-card.very-unhealthy {
+  border: 2px solid #cc0033;
+  background: rgba(204, 0, 51, 0.1);
+  color: #cc0033;
+}
+
+.pollutant-card.hazardous {
+  border: 2px solid #660099;
+  background: rgba(102, 0, 153, 0.1);
+  color: #660099;
+}
+
+.pollutant-card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 12px rgba(237, 245, 245, 0.521);
+}
+
+
+.good { background-color: #28a745; }
+.moderate { background-color: #ffc107; color: black; }
+.unhealthy { background-color: #fd7e14; }
+.very-unhealthy { background-color: #dc3545; }
+.hazardous { background-color: #6f42c1; }
+
+.legend-item {
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 6px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+.legend-item.safe { background: #009966; color: white; }
+.legend-item.moderate { background: #ffde33; color: black; }
+.legend-item.unhealthy { background: #ff9933; color: white; }
+.legend-item.very-unhealthy { background: #cc0033; color: white; }
+.legend-item.hazardous { background: #660099; color: white; }
+
